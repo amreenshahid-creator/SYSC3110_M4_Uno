@@ -1,4 +1,11 @@
-package PACKAGE_NAME;
+import java.util.EventObject;
 
-public class UnoEvent {
+public class UnoEvent extends EventObject {
+
+    private final UnoModel model;
+
+    public UnoEvent(UnoModel model) {
+        super(model);
+        this.model = model;
+    }
 }
